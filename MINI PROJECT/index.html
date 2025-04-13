@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Collaboration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Classroom Collaboration</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="profile">profile</a></li>
+                
+            </ul>
+                <div class="dark-mode-toggle">
+                    <span>🌙</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Your Classroom Hub</h1>
+                    <p>Collaborate, Learn, and Grow Together!</p>
+                    <!-- The Explore Now button -->
+                    <a href="about.html" class="btn">Explore Now</a>
+                </div>
+            </section>
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <h2>Dashboard</h2>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Assignments</h3>
+                    <p>2 Upcoming Assignments</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Discussions</h3>
+                    <p>2 Active Discussions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Notifications</h3>
+                    <p>2 New Messages</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="assignments" class="assignments">
+        <div class="container">
+            <h2>Assignments</h2>
+            <div class="assignment-list">
+                <div class="assignment-item">
+                    <h3>Math Homework</h3>
+                    <p>Due: October 10, 2024</p>
+                  </div>
+                <div class="assignment-item">
+                    <h3>Science Project</h3>
+                    <p>Due: October 15, 2024</p>
+                </div>
+    <section id="upload-assignment" class="upload-section">
+        <div class="container">
+            <h2>Submit Your Assignment</h2>
+            <form id="upload-form">
+                <input type="file" id="pdfUpload" accept="application/pdf" />
+                <button type="button" onclick="uploadPDF()">Upload PDF</button>
+                <p id="file-info"></p>
+            </form>
+        </div>
+    </section>
+    </div>
+    </section>       
+    </section>
+
+    <section id="discussion" class="discussion">
+        <div class="container">
+            <h2>Discussion Forum</h2>
+            <div class="chat-box">
+                <div class="messages" id="messages">
+                    <!-- Messages will be appended here by JavaScript -->
+                </div>
+                <input type="text" id="message-input" placeholder="Type your message..." />
+                <button id="send-message" class="btn">Send</button>
+                <div>
+
+                </div>
+            </section>  
+    </div>
+         <div class="calendar">
+            <div class="month">
+                <div class="prev" onclick="prevMonth()">&#10094;</div>
+                <div class="current-month">
+                    <span id="current-month"></span>
+                </div>
+                <div class="next" onclick="nextMonth()">&#10095;</div>
+            </div>
+
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <div class="days" id="calendar-days"></div>
+        </div>
+
+        <div class="assignment-input">
+            <h2>Add Assignment</h2>
+            <input type="text" id="assignment-title" placeholder="Assignment Title">
+            <input type="date" id="assignment-date">
+            <button onclick="addAssignment()">Add Assignment</button>
+        </div>
+
+        <div class="assignment-list">
+            <h2>Assignments</h2>
+            <ul id="assignment-list"></ul>
+        </div>
+    </div>
+    <h2>OBJECTIVES OF CLASSROOM</h2>
+   <a href="obj.html" class="btn">ATTENDANCE</a>
+    <a href="admin.html" class="btn">ADMIN</a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Classroom Collaboration | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>

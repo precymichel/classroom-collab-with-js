@@ -1,0 +1,81 @@
+/* Background image */
+body {
+    background-image: url('pixel\ art\ wallpapers_Nero\ AI_Cartoon_Face.jpeg'); /* Change to your image URL */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color:black;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container styles */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* White background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Section styles */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Attendance section styles */
+.attendance-section {
+    margin-bottom: 20px;
+}
+
+/* Poll options (aligned) */
+.poll-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Chart container */
+.chart-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Attendance list styles */
+#attendanceList {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#attendanceList li {
+    background: rgba(200, 200, 200, 0.7); /* Light grey with opacity */
+    color: black;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}

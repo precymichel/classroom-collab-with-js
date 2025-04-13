@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance and Polls</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Classroom Collaboration</h1>
+
+        <!-- Attendance Generator Section -->
+        <section class="attendance-section">
+            <h2>Attendance Generator</h2>
+            <form id="attendanceForm">
+                <input type="text" id="studentName" placeholder="Enter Student Name" required>
+                <button type="submit">Add Attendance</button>
+            </form>
+            <ul id="attendanceList"></ul>
+        </section>
+
+        <hr>
+
+        <!-- Polls & Surveys Section -->
+        <section class="poll-section">
+            <h2>Poll: Preferred Assignment Type</h2>
+            <p>Which type of assignment do you prefer?</p>
+            <div class="poll-options">
+                <button onclick="vote('Essay')">Essay</button>
+                <button onclick="vote('Project')">Project</button>
+                <button onclick="vote('Presentation')">Presentation</button>
+                <button onclick="vote('Quiz')">Quiz</button>
+            </div>
+            <div class="chart-container">
+                <canvas id="pollChart" width="400" height="400"></canvas>
+            </div>
+        </section>
+    </div>
+    <a href="index.html" class="btn">Back to Home</a>
+    <script src="script.js"></script>
+</body>
+</html>
